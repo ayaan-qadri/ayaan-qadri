@@ -1,0 +1,41 @@
+html {
+    font-size: 62.2%;
+}
+
+@media screen and (max-width: 430px) {
+    html {
+        font-size: 55%;
+    }
+
+    #root .photoNdis {
+        flex-direction: column;
+    }
+
+    #root .menu {
+        width: 90%;
+    }
+    
+    #root .menu a {
+        width: 20%;
+        font-size: 1.3rem;
+    }
+
+    #root .photo img {
+        width: 15rem;   
+        position: relative;
+        left: -60%;
+    }
+
+    #root .textArea h5{
+        width: 80vw;
+        font-weight: 300;
+    }
+
+    #root .button-container{
+        width: 90vw;
+    }
+
+    #root .card{
+        width:  90%;
+    }
+}
