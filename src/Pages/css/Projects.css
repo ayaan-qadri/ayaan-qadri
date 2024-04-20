@@ -1,14 +1,31 @@
 .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     padding: 50px;
-    gap: 5%;
+    gap: 2%;
+    place-items: center;
     font-family: "Roboto", sans-serif;
+    padding-top: 2%;
 }
 
+.forkedLable{
+    position: relative;
+    top: 2%;
+    left: 2%;
+    z-index: 999;
+    font-size: 1.5rem;
+    background-color: #ffffff;
+    width: 15%;
+    color: #000000;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s ease-in;
+
+}
+
+
 .card {
-    width: 25%;
+    width: 60%;
     height: 30rem;
     border-radius: 10px;
     overflow: hidden;
@@ -17,6 +34,7 @@
     color: #f0f0f0;
     box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
     text-align: left;
+    background: linear-gradient(to right, #283048, #859398);
 }
 
 .card img {
@@ -52,10 +70,14 @@
     font-size: 2rem;
 }
 
+.card:hover .forkedLable {
+    background-color: #000000;
+    color: #ffffff;
+    transition: 0.3s ease-out;
+}
 .card:hover h2{
     transform: translateY(-430%);
     transition: 0.3s ease-out;
-    color: #000000;
 }
 
 .details{
@@ -73,7 +95,6 @@
     transform: translateY(0);
     opacity: 1;
     transition: 0.3s ease-in;
-    color: #000000;
 }
 
 .details a{
@@ -83,8 +104,10 @@
     gap: 2%;
     margin-top: 5%;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-size: 1.5rem;
+    text-align: center;
+    text-wrap: nowrap;
 }
 
 .card:hover img {

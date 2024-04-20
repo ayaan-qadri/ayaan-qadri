@@ -1,6 +1,6 @@
-import React from 'react'
-import {Outlet } from 'react-router-dom'
-import Menu from './Menu';
+import React, { useState } from "react";
+import { Outlet } from "react-router-dom";
+import Menu from "./Menu";
 
 function Layout() {
   return (
@@ -11,4 +11,4 @@ function Layout() {
   );
 }
 
-export default Layout
+export default Layout;

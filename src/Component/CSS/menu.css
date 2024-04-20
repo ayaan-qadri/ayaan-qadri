@@ -4,13 +4,25 @@
     justify-content: center;
     padding: .4rem;
     gap: 5%;
-    position: absolute;
+    position: fixed;
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
     width: 50%;
     border-radius: 100px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    z-index: 1000;
+    background-color: #ffffff;
+}
+
+.menuClosed{
+    width: auto;
+    left:7%;
+}
+
+.hideBtn{
+    position: absolute;
+    left: 4%;
 }
 .menu a{
     text-decoration: none;
