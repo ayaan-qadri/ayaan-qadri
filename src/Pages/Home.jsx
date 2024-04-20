@@ -6,7 +6,7 @@ function Interface() {
     <div className="main">
       <div className="photoNdis">
         <div className="photo">
-          <img src="../../public/aq.png" />
+          <img src="https://github.com/ayaan-qadri/ayaan-qadri/blob/main/public/aq.png?raw=true" />
         </div>
         <div className="textArea">
           <div>
